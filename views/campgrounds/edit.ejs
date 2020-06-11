@@ -1,8 +1,7 @@
 <%- include("../partials/header") %>
 <div class="container">
     <div class="row">
-        <h1 style="text-align:center"> Edit <%=camp.name %> </h1>
-
+        <h1 style="text-align:center;color: darksalmon;"> Edit <%=camp.name %> </h1>
         <div style="width: 30%;margin: 0 auto;">
             <form action="/campgrounds/<%=camp._id %>?_method=PUT" method="POST">
                 <div class="form-group">
@@ -22,11 +21,7 @@
                 </div>
             </form>
         </div>
-       
-
     </div>
-    
-
 </div>
 <ul class="slideshow">
     <li></li>

@@ -13,7 +13,9 @@
 
 }
 body {
-    background-color: hsl(43, 100%, 99%)
+    background-color: hsl(43, 100%, 99%);
+    font-family: 'Cinzel Decorative', cursive;
+
 }
   
 .container {
