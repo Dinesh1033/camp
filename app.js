@@ -40,9 +40,7 @@ app.use(function(req,res,next){
 app.get("/", function(req,res){
     res.render("landing");
 });
-app.use("/campgrounds/:id/comments",comro);
 app.use("/campgrounds",campRou);
+app.use("/campgrounds/:id/comments",comro);
 app.use("/",authro);
-app.listen(3000,function(){
-    console.log("server");
-});
+app.listen(process.env.PORT,process.env.IP);
