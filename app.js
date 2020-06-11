@@ -43,7 +43,4 @@ app.get("/", function(req,res){
 app.use("/campgrounds",campRou);
 app.use("/campgrounds/:id/comments",comro);
 app.use("/",authro);
-//app.listen(process.env.PORT,process.env.IP);
-app.listen(3000,function(req,res){
-    console.log("server starr")
-})
+app.listen(process.env.PORT,process.env.IP);
