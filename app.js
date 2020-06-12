@@ -14,7 +14,7 @@ var campRou=require("./routes/campgrounds");
 var authro=require("./routes/index")
 
 var app= express();
-mongoose.connect("mongodb+srv://Dinesh_10:Dineshcse@10@cluster0-xq65t.mongodb.net/ground?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.DatabaseURL,{useNewUrlParser: true, useUnifiedTopology: true})
 app.use(express.static(__dirname +"/public"))
 
 app.use(method("_method"));
